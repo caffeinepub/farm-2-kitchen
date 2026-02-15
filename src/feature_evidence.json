@@ -1,0 +1,24 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-increase-the-opacity-strength-of-the-hero-section-s-transparent-overlay-the-background-gradient-overlay-over-the-hero-image-so-the-hero-heading-and-description-text-remain-clearly-readable-against-the-background-image-on-both-desktop-and-mobile",
+      "featureTitle": "Increase the opacity/strength of the Hero section’s transparent overlay (the background gradient overlay over the hero image) so the hero heading and description text remain clearly readable against the background image on both desktop and mobile.",
+      "files": [
+        "frontend/src/features/marketing/sections/HeroSection.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-18"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

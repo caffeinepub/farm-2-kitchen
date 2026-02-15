@@ -1,0 +1,19 @@
+{
+  "frontend/src/index.css": "Global styles with warm OKLCH color palette, custom fonts (Inter + Playfair Display), and new hero-specific text utilities (text-hero-heading, text-hero-text) with subtle text shadows for improved readability in the hero section.",
+  "frontend/tailwind.config.js": "Extended Tailwind configuration with warm color tokens, custom shadows (warm/warm-lg), serif/sans font families, and fade-in animation for the organic Farm 2 Kitchen aesthetic.",
+  "frontend/src/App.tsx": "Main application component that composes all marketing sections (Hero, About, Why Choose, Uses, Quality, Testimonials, Contact) with header and footer in a single-page layout.",
+  "frontend/src/features/marketing/components/SiteHeader.tsx": "Sticky header with Farm 2 Kitchen branding, logo, smooth scroll navigation to all sections, and responsive mobile menu.",
+  "frontend/src/features/marketing/components/BrandMark.tsx": "Simple component that renders the Farm 2 Kitchen logo from static assets with configurable sizing.",
+  "frontend/src/features/marketing/components/SiteFooter.tsx": "Footer with copyright, attribution to caffeine.ai with UTM tracking, and heart icon matching the warm brand theme.",
+  "frontend/src/features/marketing/sections/HeroSection.tsx": "Hero section with Farm 2 Kitchen branding, turmeric roots background image, and strengthened overlay gradient (from-background via-background to-background/90) for significantly improved text readability on both desktop and mobile.",
+  "frontend/src/features/marketing/sections/AboutSection.tsx": "About section explaining farm sourcing, careful processing, and fresh Gurugram delivery with three feature cards (Farm-Sourced, Carefully Processed, Fresh Delivery).",
+  "frontend/src/features/marketing/sections/WhyChooseSection.tsx": "Benefits section displaying five key advantages (100% Pure, No Additives, Freshly Ground, Rich Color/Aroma, Locally Trusted) in a responsive card grid.",
+  "frontend/src/features/marketing/sections/UsesSection.tsx": "Uses section showcasing four applications (Daily Cooking, Haldi Milk, Traditional Ceremony, Home Remedies) with icons and Indian kitchen background imagery.",
+  "frontend/src/features/marketing/sections/QualityPromiseSection.tsx": "Quality promise section with turmeric powder image and four-step process (Cleaned, Sun-Dried, Finely Ground, Hygienically Packed) emphasizing nutrient retention.",
+  "frontend/src/features/marketing/sections/TestimonialsSection.tsx": "Customer testimonials section with three static reviews from Gurugram residents in card layout with quote styling.",
+  "frontend/src/features/marketing/sections/ContactSection.tsx": "Contact section displaying location, phone number (9818856274), and WhatsApp chat button; all contact form UI and submission logic removed.",
+  "frontend/src/features/marketing/config/whatsapp.ts": "WhatsApp configuration with the phone number 919818856274 (India country code format) for wa.me links.",
+  "frontend/src/features/contact/hooks/useSubmitContactForm.ts": "React Query mutation hook that submits contact form data to backend via actor and invalidates related queries on success.",
+  "frontend/src/hooks/useQueries.ts": "React Query hooks for fetching contact submissions (admin) and location info from the backend.",
+  "frontend/index.html": "HTML entry point with SEO-friendly title/description for Farm 2 Kitchen and Google Fonts preconnect for Inter and Playfair Display."
+}

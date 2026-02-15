@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --radius: 0.75rem;
+        /* Warm turmeric yellow and earthy palette */
+        --background: 0.98 0.02 60;
+        --foreground: 0.25 0.03 45;
+        --card: 1 0.01 60;
+        --card-foreground: 0.25 0.03 45;
+        --popover: 1 0.01 60;
+        --popover-foreground: 0.25 0.03 45;
+        /* Turmeric yellow primary */
+        --primary: 0.72 0.15 75;
+        --primary-foreground: 0.20 0.04 45;
+        /* Warm earth secondary */
+        --secondary: 0.88 0.04 55;
+        --secondary-foreground: 0.30 0.03 40;
+        --muted: 0.92 0.03 60;
+        --muted-foreground: 0.50 0.02 50;
+        /* Warm terracotta accent */
+        --accent: 0.65 0.12 35;
+        --accent-foreground: 0.98 0.01 60;
+        --destructive: 0.577 0.245 27.325;
+        --destructive-foreground: 0.985 0 0;
+        --border: 0.88 0.03 60;
+        --input: 0.88 0.03 60;
+        --ring: 0.72 0.15 75;
+        --chart-1: 0.72 0.15 75;
+        --chart-2: 0.65 0.12 35;
+        --chart-3: 0.55 0.10 50;
+        --chart-4: 0.80 0.08 65;
+        --chart-5: 0.60 0.14 40;
+        /* Hero-specific high contrast colors */
+        --hero-heading: 0.18 0.04 40;
+        --hero-text: 0.30 0.03 40;
+    }
+
+    .dark {
+        --background: 0.20 0.03 45;
+        --foreground: 0.95 0.02 60;
+        --card: 0.25 0.03 40;
+        --card-foreground: 0.95 0.02 60;
+        --popover: 0.22 0.03 42;
+        --popover-foreground: 0.95 0.02 60;
+        --primary: 0.75 0.16 75;
+        --primary-foreground: 0.20 0.04 45;
+        --secondary: 0.30 0.03 40;
+        --secondary-foreground: 0.95 0.02 60;
+        --muted: 0.30 0.03 40;
+        --muted-foreground: 0.65 0.02 55;
+        --accent: 0.68 0.13 35;
+        --accent-foreground: 0.98 0.01 60;
+        --destructive: 0.704 0.191 22.216;
+        --destructive-foreground: 0.98 0.01 60;
+        --border: 0.30 0.03 40;
+        --input: 0.30 0.03 40;
+        --ring: 0.75 0.16 75;
+        --chart-1: 0.75 0.16 75;
+        --chart-2: 0.68 0.13 35;
+        --chart-3: 0.58 0.11 50;
+        --chart-4: 0.82 0.09 65;
+        --chart-5: 0.63 0.15 40;
+        /* Hero-specific high contrast colors for dark mode */
+        --hero-heading: 0.98 0.02 60;
+        --hero-text: 0.92 0.02 58;
+    }
+
+    * {
+        @apply border-border;
+    }
+    
+    body {
+        @apply bg-background text-foreground;
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Playfair Display', Georgia, serif;
+        font-weight: 600;
+    }
+}
+
+@layer utilities {
+    .text-balance {
+        text-wrap: balance;
+    }
+    
+    .text-hero-heading {
+        color: oklch(var(--hero-heading));
+        text-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    }
+    
+    .text-hero-text {
+        color: oklch(var(--hero-text));
+        text-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}

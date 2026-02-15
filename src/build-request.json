@@ -1,0 +1,49 @@
+{
+  "kind": "build_request",
+  "title": "Strengthen Hero section overlay for better text readability",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-18",
+      "text": "Increase the opacity/strength of the Hero section’s transparent overlay (the background gradient overlay over the hero image) so the hero heading and description text remain clearly readable against the background image on both desktop and mobile.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-3"
+        ],
+        "quotes": [
+          "Make the transparent overlay very strong so that text looks properly"
+        ]
+      },
+      "acceptanceCriteria": [
+        "In frontend/src/features/marketing/sections/HeroSection.tsx, the overlay class currently `bg-gradient-to-r from-background/98 via-background/95 to-background/75` is updated to a noticeably stronger overlay (higher opacity) while keeping the same general gradient direction and warm theme.",
+        "Hero heading (“Pure Haldi. From Farm to Your Kitchen.”) and the full hero description paragraph are clearly legible without blending into the background image on common viewport sizes (mobile and desktop).",
+        "No user-facing text content is changed as part of this update."
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not edit any files under frontend/src/components/ui or any other paths listed as immutable in SYSTEM_CONTEXT.",
+    "Keep the app as a single-page marketing website; no new sections or features beyond adjusting the hero overlay strength.",
+    "Maintain English for all user-facing text."
+  ],
+  "nonGoals": [
+    "Changing WhatsApp configuration or Contact section behavior.",
+    "Changing hero copywriting or adding new imagery.",
+    "Backend changes or state migrations."
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  },
+  "userProfileUpdate": {
+    "goalsToAdd": [],
+    "goalsToRemove": [],
+    "preferencesToAdd": [],
+    "preferencesToRemove": [],
+    "miscToAdd": [],
+    "miscToRemove": [],
+    "fieldsToSet": {},
+    "fieldsToDelete": []
+  }
+}

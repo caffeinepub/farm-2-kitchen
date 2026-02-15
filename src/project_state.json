@@ -1,0 +1,215 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 15,
+  "summary": "Website project for “Farm 2 Kitchen” (local Gurugram business) selling 100% pure turmeric (haldi) powder; modern, clean, trustworthy design with warm organic yellow/earthy tones, imagery of turmeric and Indian kitchen; includes hero, about, benefits, uses, quality promise, testimonials, and a simplified Contact Us section with WhatsApp chat contact info (no visitor messaging/contact form).",
+  "architectural_notes": [
+    "Contact CTA should open WhatsApp chat to +91 9818856274 (wa.me link), not a phone-call link.",
+    "Remove/disable contact form UI and do not store visitor messages in backend since messaging is removed.",
+    "Ensure above-the-fold/hero (starting section) text has sufficient contrast vs background; adjust text color and font styling for readability.",
+    "User preference change: keep the Hero/top text black (do not switch the “Experience the…”/top lighter text to white). Ensure readability via other contrast methods if needed (e.g., overlay/gradient, background adjustment).",
+    "Increase the Hero/starting section transparent overlay/tint strength (make it very strong) to ensure the black hero text remains clearly readable against the background."
+  ],
+  "known_issues": [
+    "Previous attempt to add WhatsApp chat link and remove contact form failed with: “The AI struggled with your request. Please rephrase or break it down into simpler steps.”",
+    "Hero/starting section text is hard to read because it blends with the background; needs text color/font adjustments to improve readability."
+  ],
+  "isFixRequest": true,
+  "existing_features": [
+    {
+      "id": "feature-create-a-modern-clean-trustworthy-single-page-marketing-website-for-the-brand-farm-2-kitchen-with-a-warm-natural-organic-look-using-yellow-and-earthy-tones-and-an-authentic-traditional-yet-modern-tone-throughout-all-user-facing-text-in-english",
+      "title": "Create a modern, clean, trustworthy single-page marketing website for the brand “Farm 2 Kitchen” with a warm, natural, organic look using yellow and earthy tones, and an authentic, traditional-yet-modern tone throughout (all user-facing text in English).",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-a-hero-section-that-includes-the-tagline-pure-haldi-from-farm-to-your-kitchen-plus-a-short-description-emphasizing-authenticity-and-freshness-and-includes-relevant-turmeric-kitchen-imagery",
+      "title": "Implement a Hero section that includes the tagline “Pure Haldi. From Farm to Your Kitchen.” plus a short description emphasizing authenticity and freshness, and includes relevant turmeric/kitchen imagery.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-an-about-us-section-that-explains-the-turmeric-is-sourced-directly-from-farms-carefully-processed-and-delivered-fresh-to-customers-in-gurugram-local-business-context",
+      "title": "Add an About Us section that explains the turmeric is sourced directly from farms, carefully processed, and delivered fresh to customers in Gurugram (local business context).",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-why-choose-our-haldi-section-that-lists-the-benefits-100-pure-natural-no-additives-or-preservatives-freshly-ground-rich-color-aroma-locally-trusted-in-gurugram",
+      "title": "Add a “Why Choose Our Haldi?” section that lists the benefits: 100% Pure & Natural; No Additives or Preservatives; Freshly Ground; Rich Color & Aroma; Locally Trusted in Gurugram.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-uses-of-our-haldi-section-that-includes-daily-cooking-sabzi-dal-curries-haldi-milk-golden-milk-traditional-haldi-ceremony-wedding-rituals-home-remedies",
+      "title": "Add a “Uses of Our Haldi” section that includes: daily cooking (sabzi, dal, curries); haldi milk (golden milk); traditional haldi ceremony (wedding rituals); home remedies.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-quality-freshness-promise-section-that-explains-the-haldi-is-carefully-cleaned-sun-dried-finely-ground-and-hygienically-packed-to-retain-nutrients-and-aroma",
+      "title": "Add a “Quality & Freshness Promise” section that explains the haldi is carefully cleaned, sun-dried, finely ground, and hygienically packed to retain nutrients and aroma.",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-customer-testimonials-section-with-multiple-testimonials-presented-in-a-clean-trustworthy-layout-initially-static-content-is-acceptable",
+      "title": "Add a Customer Testimonials section with multiple testimonials presented in a clean, trustworthy layout (initially static content is acceptable).",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-an-order-contact-section-that-includes-the-location-text-signature-millenia-1-gurugram-haryana-a-whatsapp-order-option-and-a-contact-form-name-phone-email-message",
+      "title": "Add an Order / Contact section that includes: the location text “Signature Millenia 1, Gurugram, Haryana”, a WhatsApp order option, and a contact form (name, phone/email, message).",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-site-structure-navigation-and-basic-seo-friendly-metadata-header-with-brand-name-farm-2-kitchen-and-in-page-links-to-each-section-hero-about-why-choose-uses-quality-promise-testimonials-contact-and-appropriate-page-title-description",
+      "title": "Add site structure/navigation and basic SEO-friendly metadata: header with brand name “Farm 2 Kitchen” and in-page links to each section (Hero, About, Why Choose, Uses, Quality Promise, Testimonials, Contact), and appropriate page title/description.",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-and-use-generated-static-images-that-match-the-brand-theme-turmeric-roots-powder-and-indian-kitchen-settings-store-them-under-frontend-public-assets-generated-and-reference-them-directly-from-the-frontend-no-backend-image-routing",
+      "title": "Add and use generated static images that match the brand theme (turmeric roots/powder and Indian kitchen settings). Store them under frontend/public/assets/generated and reference them directly from the frontend (no backend image routing).",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-configure-the-website-whatsapp-contact-number-to-the-user-provided-phone-number-9818856274-using-the-required-wa-me-format-with-country-code-no-or-spaces-so-the-whatsapp-button-opens-a-whatsapp-chat",
+      "title": "Configure the website WhatsApp contact number to the user-provided phone number 9818856274, using the required wa.me format with country code (no + or spaces), so the WhatsApp button opens a WhatsApp chat.",
+      "reqIds": [
+        "REQ-12"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-remove-the-visitor-messaging-contact-form-ui-from-the-contact-section-so-visitors-cannot-submit-messages-from-the-website",
+      "title": "Remove the visitor messaging/contact form UI from the Contact section so visitors cannot submit messages from the website.",
+      "reqIds": [
+        "REQ-13"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-clear-contact-us-information-area-section-within-the-existing-contact-section-that-explicitly-displays-the-phone-number-9818856274-as-contact-information-alongside-the-existing-location-and-whatsapp-option-with-all-user-facing-text-in-english",
+      "title": "Add a clear “Contact Us” information area/section (within the existing #contact section) that explicitly displays the phone number 9818856274 as contact information, alongside the existing location and WhatsApp option, with all user-facing text in English.",
+      "reqIds": [
+        "REQ-14"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-improve-readability-of-the-starting-hero-section-text-so-it-does-not-blend-into-the-hero-background-image-by-adjusting-typography-font-styling-and-increasing-contrast-for-the-heading-and-description-text-in-the-hero-section",
+      "title": "Improve readability of the starting (Hero) section text so it does not blend into the hero background image by adjusting typography (font styling) and increasing contrast for the heading and description text in the Hero section.",
+      "reqIds": [
+        "REQ-15"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-hero-section-description-text-so-the-opening-phrase-experience-the-is-rendered-in-a-white-or-light-color-instead-of-the-current-dark-tone-to-prevent-it-from-blending-into-the-hero-background-image",
+      "title": "Update the Hero section description text so the opening phrase “Experience the …” is rendered in a white or light color (instead of the current dark tone) to prevent it from blending into the hero background image.",
+      "reqIds": [
+        "REQ-16"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-in-the-hero-section-description-paragraph-change-the-opening-phrase-experience-the-authentic-taste-and-vibrant-color-of-100-pure-turmeric-powder-to-use-black-dark-text-not-white-matching-the-rest-of-the-paragraph-styling",
+      "title": "In the Hero section description paragraph, change the opening phrase \"Experience the authentic taste and vibrant color of 100% pure turmeric powder.\" to use black/dark text (not white), matching the rest of the paragraph styling.",
+      "reqIds": [
+        "REQ-17"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-increase-the-opacity-strength-of-the-hero-section-s-transparent-overlay-the-background-gradient-overlay-over-the-hero-image-so-the-hero-heading-and-description-text-remain-clearly-readable-against-the-background-image-on-both-desktop-and-mobile",
+      "title": "Increase the opacity/strength of the Hero section’s transparent overlay (the background gradient overlay over the hero image) so the hero heading and description text remain clearly readable against the background image on both desktop and mobile.",
+      "reqIds": [
+        "REQ-18"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Create overall site design: modern, clean, trustworthy with warm organic yellow/earthy palette and authentic-traditional-yet-modern tone",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Add Hero section with tagline “Pure Haldi. From Farm to Your Kitchen.” and short authenticity/freshness description",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Add About Us section describing farm sourcing, careful processing, and fresh delivery in Gurugram",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Add “Why Choose Our Haldi?” section listing purity, no additives/preservatives, freshly ground, rich color/aroma, locally trusted in Gurugram",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Add “Uses of Our Haldi” section (daily cooking, haldi milk, haldi ceremony, home remedies)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-6",
+      "summary": "Add “Quality & Freshness Promise” section describing cleaning, sun-drying, fine grinding, and hygienic packing to retain nutrients/aroma",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-7",
+      "summary": "Add Customer Testimonials section",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-18",
+      "summary": "Replace the Order/Contact form with a simple “Contact Us” section showing WhatsApp chat contact number 9818856274 (no visitor messaging/contact form).",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-19",
+      "summary": "Increase the Hero/starting section transparent overlay strength significantly to improve text readability/contrast",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Farm 2 Kitchen",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

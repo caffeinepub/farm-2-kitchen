@@ -1,0 +1,23 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Strengthen Hero overlay gradient for improved text readability",
+  "requirements": [
+    {
+      "id": "REQ-18",
+      "summary": "Increase the Hero section background gradient overlay opacity to improve heading and description readability on desktop and mobile without changing any copy.",
+      "acceptanceCriteria": [
+        "In frontend/src/features/marketing/sections/HeroSection.tsx, the overlay class currently `bg-gradient-to-r from-background/98 via-background/95 to-background/75` is updated to a noticeably stronger overlay (higher opacity) while keeping the same general gradient direction and warm theme.",
+        "Hero heading (“Pure Haldi. From Farm to Your Kitchen.”) and the full hero description paragraph are clearly legible without blending into the background image on common viewport sizes (mobile and desktop).",
+        "No user-facing text content is changed as part of this update."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/features/marketing/sections/HeroSection.tsx",
+          "operation": "modify",
+          "description": "Update the hero background overlay gradient Tailwind classes to increase opacity/strength (e.g., make the mid/end stops more opaque while preserving `bg-gradient-to-r` and the warm theme) so the heading and description remain clearly readable on desktop and mobile; do not change any user-facing text."
+        }
+      ]
+    }
+  ]
+}

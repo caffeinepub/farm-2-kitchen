@@ -1,2 +1,3 @@
-# farm-2-kitchen
-Exported from Caffeine project: Farm 2 Kitchen
+## 
+
+To run app build and run docker image: `docker build -t app . docker run -it --network host app`

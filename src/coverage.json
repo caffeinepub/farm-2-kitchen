@@ -1,0 +1,37 @@
+{
+  "kind": "coverage_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-15T09:47:46.975Z",
+  "sources": {
+    "buildRequest": true,
+    "implementationPlan": true
+  },
+  "requirements": {
+    "total": 1,
+    "implemented": 1,
+    "items": [
+      {
+        "id": "REQ-18",
+        "summary": "Increase the opacity/strength of the Hero section’s transparent overlay (the background gradient overlay over the hero image) so the hero heading and description text remain clearly readable against the background image on both desktop and mobile.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/features/marketing/sections/HeroSection.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/features/marketing/sections/HeroSection.tsx"
+        ]
+      }
+    ]
+  },
+  "changedFiles": [
+    "build-request.json",
+    "feature_evidence.json",
+    "frontend-file-summaries.txt",
+    "frontend-implementation-plan.json",
+    "frontend/src/features/marketing/sections/HeroSection.tsx",
+    "project_state.json",
+    "scratch/component-selection.json",
+    "spec.md",
+    "spec_vs_diff_report.json"
+  ]
+}
